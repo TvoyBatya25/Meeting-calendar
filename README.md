@@ -1,16 +1,11 @@
-# React + Vite
+# Календарь встреч
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Выполнение тестового задания на вакансию AI-СПЕЦИАЛИСТА. Создан календарь встреч, где каждый сотрудник может видеть какие запланированы встречи, открыть и посмотреть любую из них, возможность посмотреть встречи на неделю, месяц, конкретный день или на сегодня. Есть возможность добавлять новые встречи и удалять старые, возможность добавлять сотрудников. Встречи не могут пересекаться по времени.
 
-Currently, two official plugins are available:
+## Архитектура проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Компонентный подход React с использованием библиотеки react-big-calendar для визуализации встреч. Интеграция с API сервиса Airtable, где и размещена база данных с сотрудниками и встречами.
 
-## React Compiler
+## Почему я выбрал такой подход?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Скорость и масштабируемость. Сторонний сервис для создания базы данных Airtable и React выбраны благодаря удобноству. Библиотека react-big-calendar выбрана из-за удобной системы событий и гибкости в настройке. 
